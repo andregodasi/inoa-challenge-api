@@ -8,10 +8,10 @@ import { AlphaVantageModule } from './alpha-vantage/alpha-vantage.module';
 
 @Module({
   imports: [
+    AlphaVantageModule,
     BrapiModule,
     HttpModule,
     ConfigModule.forRoot(),
-    AlphaVantageModule,
   ],
   controllers: [AppController],
   providers: [AppService],
